@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import rawMaterials from "@/assets/images/raw_materials.png";
 
 export function Philosophy() {
     return (
@@ -19,10 +20,11 @@ export function Philosophy() {
                         {/* Raw Materials Image */}
                         <div className="absolute inset-0">
                             <Image
-                                src="/images/raw_materials.png"
+                                src={rawMaterials}
                                 alt="Raw Materials"
                                 fill
                                 className="object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+                                placeholder="blur"
                             />
                         </div>
                     </motion.div>

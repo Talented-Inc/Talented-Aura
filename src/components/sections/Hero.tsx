@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import heroBackground from "@/assets/images/hero_background.png";
 
 export function Hero() {
     const ref = useRef(null);
@@ -27,11 +28,12 @@ export function Hero() {
                 {/* Hero Background Image */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/images/hero_background.png"
+                        src={heroBackground}
                         alt="Abstract Luxury Texture"
                         fill
                         className="object-cover opacity-60"
                         priority
+                        placeholder="blur"
                     />
                 </div>
             </motion.div>
