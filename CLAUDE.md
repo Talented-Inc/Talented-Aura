@@ -10,6 +10,7 @@ Aura Custom Packaging — a luxury packaging brand website built with Next.js (A
 
 - `npm run dev` — Start dev server
 - `npm run build` — Production build (static export to `./out/`)
+- `npm start` — Serve the production build locally (requires `npm run build` first)
 - `npm run lint` — Run ESLint (eslint-config-next with core web vitals + TypeScript)
 
 No test framework is configured.
