@@ -30,7 +30,7 @@ export function Footer() {
                             <li><Link href="/inquire" className="hover:text-primary transition-colors">Inquire</Link></li>
                             <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
                             <li><a href="mailto:hello@aura-packaging.com" className="hover:text-primary transition-colors">hello@aura-packaging.com</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">LinkedIn</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a></li>
                         </ul>
                     </div>
 

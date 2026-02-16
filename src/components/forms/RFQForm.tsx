@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,6 +17,7 @@ const steps = [
 ];
 
 export function RFQForm() {
+    const router = useRouter();
     const [currentStep, setCurrentStep] = useState(1);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
@@ -72,7 +74,7 @@ export function RFQForm() {
                 <p className="text-neutral-400 mb-8 max-w-md mx-auto">
                     Thank you for your interest in Aura. Our procurement team will review your specifications and contact you within 24 hours.
                 </p>
-                <Button onClick={() => window.location.href = "/"} variant="outline">
+                <Button onClick={() => router.push("/")} variant="outline">
                     Return Home
                 </Button>
             </motion.div>

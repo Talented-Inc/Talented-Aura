@@ -80,7 +80,7 @@ export default async function ProductPage({ params }: PageProps) {
 
                         <div className="flex gap-4">
                             <Button size="lg" className="w-full md:w-auto" asChild>
-                                <Link href={`/inquire?product=${product.slug}`}>Request Quote</Link>
+                                <Link href="/inquire">Request Quote</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="w-full md:w-auto">
                                 Download Spec Sheet
