@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Design Guidelines
+
+This project strictly adheres to a "Dark Luxury" design aesthetic. Before updating any UI components, adding new pages, or creating new views, please refer to the [STYLE_GUIDE.md](./STYLE_GUIDE.md) in the root directory.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
